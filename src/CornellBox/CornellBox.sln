@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CornellBox", "CornellBox\CornellBox.vcxproj", "{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Profile|Win32 = Profile|Win32
+		Profile|x64 = Profile|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Debug|Win32.Build.0 = Debug|Win32
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Debug|x64.ActiveCfg = Debug|x64
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Debug|x64.Build.0 = Debug|x64
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Profile|Win32.ActiveCfg = Profile|Win32
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Profile|Win32.Build.0 = Profile|Win32
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Profile|x64.ActiveCfg = Profile|x64
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Profile|x64.Build.0 = Profile|x64
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Release|Win32.ActiveCfg = Release|Win32
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Release|Win32.Build.0 = Release|Win32
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Release|x64.ActiveCfg = Release|x64
+		{5B7CE2DB-63B1-4090-9DEB-814DB3D7DDC5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {552D50D7-818B-452D-A4F7-438469CE83D6}
+	EndGlobalSection
+EndGlobal
