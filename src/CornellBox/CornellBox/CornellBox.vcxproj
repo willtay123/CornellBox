@@ -364,7 +364,7 @@
     <ClCompile Include="Objects\Light.cpp" />
     <ClCompile Include="Objects\Model.cpp" />
     <ClCompile Include="Objects\Shader.cpp" />
-    <ClCompile Include="Tutorial05.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DDSTextureLoader.h" />
