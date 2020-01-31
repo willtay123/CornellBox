@@ -2,7 +2,7 @@
 #include <d3d11_1.h>
 #include <directxmath.h>
 
-#include "ShaderManager.h"
+#include "Managers/ShaderManager.h"
 #include "Model.h"
 
 using namespace DirectX;

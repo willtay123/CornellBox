@@ -6,9 +6,9 @@
 #include <string>
 #include <sstream>
 
-#include "Entity.h"
-#include "Camera.h"
-#include "Light.h"
+#include "Objects/Entity.h"
+#include "Objects/Camera.h"
+#include "Objects/Light.h"
 
 using std::ifstream;
 using std::string;

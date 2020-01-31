@@ -2,7 +2,7 @@
 #include <d3dcompiler.h>
 #include <ctime>
 #include <cstdlib>
-#include "Shader.h"
+#include "Objects/Shader.h"
 
 class ShaderManager {
 private:

@@ -94,7 +94,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Gouraud
 	// Create the Vertex Shader
 	ID3DBlob* pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"Gouraud_VS.hlsl", 0, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/Gouraud_VS.hlsl", 0, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -114,7 +114,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	ID3DBlob* pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"Gouraud_PS.hlsl", 0, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/Gouraud_PS.hlsl", 0, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -125,7 +125,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Phong
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"Phong_VS.hlsl", 1, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/Phong_VS.hlsl", 1, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -145,7 +145,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"Phong_PS.hlsl", 1, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/Phong_PS.hlsl", 1, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -156,7 +156,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Texture_Mapping
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"TextureMapping_VS.hlsl", 2, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/TextureMapping_VS.hlsl", 2, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -176,7 +176,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"TextureMapping_PS.hlsl", 2, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/TextureMapping_PS.hlsl", 2, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -187,7 +187,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Bump_Mapping
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"BumpMapping_VS.hlsl", 3, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/BumpMapping_VS.hlsl", 3, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -207,7 +207,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"BumpMapping_PS.hlsl", 3, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/BumpMapping_PS.hlsl", 3, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -218,7 +218,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Displacement_Mapping
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"DisplacementMapping_VS.hlsl", 4, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/DisplacementMapping_VS.hlsl", 4, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -238,7 +238,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"DisplacementMapping_PS.hlsl", 4, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/DisplacementMapping_PS.hlsl", 4, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -249,7 +249,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Toon_Shading
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"ToonShading_VS.hlsl", 5, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/ToonShading_VS.hlsl", 5, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -269,7 +269,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"ToonShading_PS.hlsl", 5, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/ToonShading_PS.hlsl", 5, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -280,7 +280,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Transparency
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"Transparency_VS.hlsl", 6, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/Transparency_VS.hlsl", 6, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -300,7 +300,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"Transparency_PS.hlsl", 6, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/Transparency_PS.hlsl", 6, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -311,7 +311,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Environment_Mapping
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"EnvironmentMapping_VS.hlsl", 7, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/EnvironmentMapping_VS.hlsl", 7, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -331,7 +331,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"EnvironmentMapping_PS.hlsl", 7, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/EnvironmentMapping_PS.hlsl", 7, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))
@@ -342,7 +342,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 	#pragma region Glowing
 	// Create the Vertex Shader
 	pVSBlob = nullptr;
-	hr = ShaderManager::SetupVertexShader(device, L"Glowing_VS.hlsl", 8, &pVSBlob);
+	hr = ShaderManager::SetupVertexShader(device, L"Shaders/Glowing_VS.hlsl", 8, &pVSBlob);
 
 	if (FAILED(hr)) {
 		pVSBlob->Release();
@@ -362,7 +362,7 @@ HRESULT ShaderManager::InitialiseShaders(ID3D11Device* const device, ID3D11Devic
 
 	// Create the Pixel Shader
 	pPSBlob = nullptr;
-	hr = SetupPixelShader(device, L"Glowing_PS.hlsl", 8, &pPSBlob);
+	hr = SetupPixelShader(device, L"Shaders/Glowing_PS.hlsl", 8, &pPSBlob);
 
 	pPSBlob->Release();
 	if (FAILED(hr))

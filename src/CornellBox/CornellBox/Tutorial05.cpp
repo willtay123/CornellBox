@@ -24,14 +24,14 @@
 #include <assimp/postprocess.h>
 #include <vector>
 
-#include "Keyboard.h"
+#include "Objects/Keyboard.h"
 #include "VertexData.h"
-#include "Model.h"
-#include "Entity.h"
-#include "Camera.h"
-#include "Light.h"
-#include "ShaderManager.h"
-#include "ConfigManager.h"
+#include "Objects/Model.h"
+#include "Objects/Entity.h"
+#include "Objects/Camera.h"
+#include "Objects/Light.h"
+#include "Managers/ShaderManager.h"
+#include "Managers/ConfigManager.h"
 #include "DDSTextureLoader.h"
 
 using namespace DirectX;
