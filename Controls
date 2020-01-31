@@ -1,0 +1,16 @@
+Controls
+
+w/up arrow				Rotate up
+a/left arrow			Rotate left
+s/down arrow			Rotate down
+d/right arrow			Rotate right
+CTRL + [above key]		Move in the relevant direction
+
+F1						Camera Position 1
+F2						Camera Position 2
+F5						Randomise Shaders
+F6						Switches Lighting Mode
+
+t/T						Decrease/increase time progression factor
+f/F						Decrease/increase level of ink in the box
+r						Reset the scene
